@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 :root {
 }
@@ -1141,7 +1141,6 @@ a {
   margin: auto;
 }
 
-
 .contact-adress {
   display: flex;
   align-items: center;
@@ -1359,18 +1358,31 @@ a {
 .policy-terms-container {
   flex-direction: column;
   align-items: start;
-  padding: 100px 20px 40px;
-  background: #fffefb;
+  padding: 100px 16px 60px;
+  background: #161b21;
+  color: #ffffff;
+}
+.policy-terms-title {
+  font-family: Anybody;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 40px;
 }
 .padding-top {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 .policy-terms-texts {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: DM Sans;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 28px;
-  text-align: justify;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -1386,15 +1398,16 @@ a {
   padding-top: 28px;
 }
 .policy-terms-text-top {
-  font-family: Poppins;
+  font-family: DM Sans;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: justify;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  padding-top: 28px;
+  padding-top: 24px;
 }
 .policy-terms-text-one {
   font-family: Poppins;
@@ -1424,13 +1437,17 @@ a {
 
   padding-left: 20px;
 
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: DM Sans;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 28px;
-  text-align: justify;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
 }
 .email-link {
   color: inherit;
@@ -1460,122 +1477,5 @@ a {
   }
   .terms-lists {
     font-size: 20px;
-  }
-}
-
-.cookie-popup {
-  position: fixed;
-  bottom: 10px;
-  width: 375px;
-  max-width: 1440px;
-  padding: 20px;
-  background: #131313;
-
-  box-shadow: 10px 10px 10px 0px #0000002e;
-
-  text-align: center;
-  z-index: 1000;
-
-  display: none;
-}
-
-.cookie-popup-text-two {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  color: #ffffff;
-}
-.cookie-button-container {
-  padding: 28px 0 0;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cookie-button {
-  padding: 10px 10px;
-  border: none;
-  border-radius: 5px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  width: 162px;
-  height: 34px;
-  padding: 7px 15px 7px 15px;
-  background: transparent;
-  color: #fff;
-  border-radius: 12px;
-}
-
-#accept-cookies {
-  background: #ffc24f;
-
-  text-decoration: none;
-
-  color: #303030;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-
-.close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-@media screen and (min-width: 1200px) {
-  .cookie-popup-text-two {
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    width: 900px;
-  }
-  .cookie-button-container {
-    padding: 0;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .cookie-popup {
-    position: fixed;
-    bottom: 10px;
-    width: 1440px;
-    max-width: 1440px;
-    padding: 20px 40px;
-    display: none;
-  }
-  .cookie-popup {
-    position: fixed;
-    bottom: 10px;
-    width: 1440px;
-    max-width: 1440px;
-    padding: 20px 40px;
-  }
-  .cookie-popup-container {
-    display: flex;
   }
 }
