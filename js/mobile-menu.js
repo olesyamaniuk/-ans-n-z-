@@ -22,8 +22,48 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function toggleAnswer(element) {
+  const answer = element.nextElementSibling;
+  const buttonImg = element.querySelector(".toggle-button img"); 
+
+  if (answer.style.display === "none" || answer.style.display === "") {
+    answer.style.display = "block";
+    buttonImg.src = "/image/faq/icon_close.png"; 
+  } else {
+    answer.style.display = "none";
+    buttonImg.src = "/image/faq/FAQ Plus Icon.png"; 
+  }
+}
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("cookie-popup");
+    const acceptButton = document.getElementById("accept-cookies");
+    const declineButton = document.getElementById("decline-cookies");
+    const closeButton = document.getElementById("close-popup");
+
+    
+    if (!localStorage.getItem("cookiesAccepted")) {
+        popup.style.display = "block";
+    }
+
+    
+    acceptButton.onclick = function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        popup.style.display = "none";
+    };
+
+    
+    declineButton.onclick = function () {
+        localStorage.setItem("cookiesAccepted", "false");
+        popup.style.display = "none";
+    };
+
+ 
+    closeButton.onclick = function () {
+        popup.style.display = "none";
+    };
+});
 
 
 
